@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavascriptFormValidation</title>
+    <link href="style.css" rel="styleshet">
+</head>
+<script src="script.js" defer></script>
+<body>
+    <form action="" novalidate>
+        <div class="email">
+            <label for="mail">Please enter your email</label>
+            <input type="email" id="mail" name="mail">
+            <span class="error" aria-live="polite"></span>
+        </div>
+        <div class="Country">
+            <label for="country">Please enter your country's name</label>
+            <input type="text" id="country" name="country">
+            <span class="error" aria-live="polite"></span>
+        </div>
+        <div class="postalCode">
+            <label for="postalCode">Please provide the postal code for your area</label>
+            <input type="text" id="postalCode" name="postalCode">
+            <span class="error" aria-live="polite"></span>
+        </div>
+        <div class="passwordFields">
+            <label for="password-1">Password :</label>
+            <input type="password" id="password-1" name="password-1">
+            <span for="" class="error" aria-live="polite"></span>
+            <label for="password-2">Confirm Password :</label>
+            <input type="password" id="password-2" name="password-2">
+            <span for="" class="error" aria-live="polite"></span>
+        </div>
+    </form>
+</body>
+</html>
