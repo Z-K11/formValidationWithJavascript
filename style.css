@@ -58,4 +58,8 @@ input
     font-size: 16px;
     padding : 1% 2%;
     color: rgba(0, 0, 0, 0.616);
+    border:none;
+    border-radius: 10px;
+    margin-top: 15px;
+    background-color: rgb(235, 235, 235);
 }
