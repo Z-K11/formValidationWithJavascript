@@ -47,3 +47,15 @@ input
     background-color: rgb(235, 235, 235);
     border-radius: 15px;
 }
+
+.submitButton
+{
+    display: flex;
+    align-items: center;
+}
+.submit
+{
+    font-size: 16px;
+    padding : 1% 2%;
+    color: rgba(0, 0, 0, 0.616);
+}
