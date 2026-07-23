@@ -78,4 +78,36 @@ form.addEventListener('input',event=>
             break;
     }
 }
-)
+);
+form.addEventListener('submit', event => {
+    if (emailRegex.test(email.value)) {
+        email.setCustomValidity("");
+    } else {
+        email.setCustomValidity("Email needs to follow the format something@example.com");
+    }
+
+    if (countryRegex.test(country.value)) {
+        country.setCustomValidity("");
+    } else {
+        country.setCustomValidity("Country must contain letters only");
+    }
+
+    checkPostalValidity(postalConstraints);
+
+    if (strongPasswordRegex.test(password.value)) {
+        password.setCustomValidity("");
+    } else {
+        password.setCustomValidity("Password should contain 1 digit, 1 special character, 1 lowercase and uppercase letter and min-length is 8");
+    }
+
+    if (confirmPassword.value !== password.value) {
+        confirmPassword.setCustomValidity("Passwords don't match");
+    } else {
+        confirmPassword.setCustomValidity("");
+    }
+
+    if (!form.checkValidity()) {
+        event.preventDefault();
+        form.reportValidity();
+    }
+});
