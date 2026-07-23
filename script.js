@@ -1,0 +1,13 @@
+const form = document.querySelector('form');
+const email = document.querySelector('#mail');
+const country = document.querySelector('#country');
+const postal = document.querySelector('#postalCode');
+const password = document.querySelector('#password-1');
+const confirmPassword = document.querySelector('#password-2');
+const mailError = document.querySelector('#emailError');
+const countryError = document.querySelector('#countryError');
+const postalError=document.querySelector('#postalError');
+const passowrdError=document.querySelector('#passwordError');
+const confirmPasswordError = document.querySelector('#confirmError');
+const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+const countryRegex = /^[a-zA-z]+$/;
